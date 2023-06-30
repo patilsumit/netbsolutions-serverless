@@ -1,0 +1,22 @@
+
+service: sumitRestApi
+frameworkVersion: "3"
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+  memorySize: 2048
+  stage: dev
+  timeout: 15
+  region: us-east-1
+
+functions:
+  hello:
+    handler: handler.helloDev
+    events:
+      - http: ANY /{proxy+}
+      - http: ANY /
+    environment:
+      NODE_ENV: development
+      PORT: 8080
+      COUNTRY_BASE_API: https://d6wn6bmjj722w.population.io/1.0
