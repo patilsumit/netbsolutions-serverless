@@ -3,22 +3,11 @@
 # POSTMAN COLLECTIONS LINK:-
 https://api.postman.com/collections/18796930-4d42a15f-8a88-40df-8006-1fa7ad53a9d0?access_key=PMAT-01GVGQS76MCBC28RWBTZJC4VCW
 
-#How efficient is your code? What are some ways that you could improve performance?
-  *we can use Asynchronous Functions mostly so that cpu can handle simultaneously load on server
-  *Avoid Sessions and Cookies in APIs, and Send Only Data in the API Response.
-  *Optimize Database Queries and maintain proper indexes.
-  *Optimize APIs with PM2 Clustering because increase the performance
-  *Use Error Scripts with Logging. ...
-  *Use HTTP/2 Instead of HTTP. ...
-  *Run Tasks in Parallel.
+#AWS LAMDA FUNCTIONS WITH API GATEWAY
+https://3axh8ze93a.execute-api.ap-south-1.amazonaws.com/dev/todo
 
-#How can we handle the load?
-  *Server-side caching is one of the most common strategies for improving the performance of a web            application.Its primary aim is to increase the speed of data retrieval because stroring as temporary.
-  *Using nodejs clustiring to manage horizontally scaling
-  *we dont need to user static files in nodejs like css and images and need to complete spike testing
-
-#new endpoint added in integration
-  *Existing nodejs project any other country endpoint added so we need to modify as callback because if any one apis is fail 2nd will be giving the result   
+#AWS LAMDA FUNCTIONS WITH SERVERLESS CONSOLE(CALLING INTERNAL EXPRESS END POINT DEPLOYED ON LAMDA)
+https://bg5ifea0ra.execute-api.us-east-1.amazonaws.com/dev/countries
 
 
 Steps to run this project:
